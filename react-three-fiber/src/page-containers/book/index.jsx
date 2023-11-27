@@ -28,7 +28,12 @@ const BookContainer = () => {
           setFov={setFov}
           setCameraPos={setCameraPos}
         />
-        <OrbitControls />
+        <OrbitControls
+          enableDamping={true}
+          enableRotate={false}
+          enableZoom={false}
+          enablePan={false}
+        />
       </Canvas>
     </>
   )
